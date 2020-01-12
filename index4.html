@@ -1,4 +1,3 @@
-// https://github.com/darshitagolchha/ReactBeginner
 <!-- INSERT BOILER PLATE CODE -->
 <!DOCTYPE html>
 <html lang="en">
@@ -23,16 +22,19 @@
     <script type="text/babel">
       class Shape extends React.Component {
         render() {
+          let { name, age } = this.props;
           return (
             <div>
-              <h1>Hello World!</h1>
+              <h1>
+                Hello World {name} and {age}!
+              </h1>
             </div>
           );
         }
       }
       var myRef = document.getElementById("app");
       // RENDER REACT TO THE DOM - WILL ACCEPT TWO ARGUMENTS (REACT WHAT, REACT WHERE)
-      ReactDOM.render(<Shape />, myRef);
+      ReactDOM.render(<Shape name={"Neha"} age={24} />, myRef);
     </script>
   </body>
 </html>
