@@ -1,4 +1,6 @@
 # ReactBeginner
 React with boilerplate code
 
-Documentation: https://reactjs.org/
+React Documentation: https://reactjs.org/
+
+In order to understand how babel interprets your code,: https://babeljs.io
